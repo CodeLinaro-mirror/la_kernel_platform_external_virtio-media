@@ -6,20 +6,20 @@ name: "virtio-media"
 description: "Rust device (MIT) and kernel device driver (GPLv2) for virtio-media"
 third_party {
   license_type: RESTRICTED
+  security {
+    tag: "android:on_device_usage"
+    tag: "android:privilege_level:privileged"
+    tag: "android:untrusted_input"
+  }
   last_upgrade_date {
     year: 2026
-    month: 9
-    day: 18
+    month: 11
+    day: 12
   }
   identifier {
     type: "Git"
     value: "https://github.com/chromeos/virtio-media"
-    version: "ed3a56fd39a74bd8117a3cc9c5b8ec8803df19cd"
+    version: "8558a29c9b4adfad55d63755ce2f31b9e98429a7"
     primary_source: true
-  }
-  security: {
-    tag: "android:on_device_usage"
-    tag: "android:privilege_level:privileged"
-    tag: "android:untrusted_input"
   }
 }
